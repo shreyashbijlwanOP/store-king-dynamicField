@@ -1,0 +1,30 @@
+{
+  "inputs": [
+    {
+      "type": "text",
+      "key": "fName",
+      "placeholder": "First Name",
+      "validation": {
+        "required": true,
+        "onlyAlpha": true
+      }
+    },
+    {
+      "type": "radio",
+      "key": "married",
+      "options": [
+        {
+          "lbl": "Yes",
+          "value": true
+        },
+        {
+          "lbl": "No",
+          "value": false
+        }
+      ],
+      "validation": {
+        "required": true
+      }
+    }
+  ]
+}
