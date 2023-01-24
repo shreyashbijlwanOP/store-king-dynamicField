@@ -3,7 +3,7 @@ import { useState } from "react";
 const RadioInput = ({ input, value, onChange, formErrors }) => {
   const [isFocused, setIsFocused] = useState(false);
   const handleChange = e => {
-    onChange(input.key, e.target.value);
+    onChange(input.key, Boolean(e.target.value));
   };
 
   return (
